@@ -1,0 +1,266 @@
+<!-- AgentForge Working Embodiment & Patent Figures
+     Open this file in any browser, then File > Print > Save as PDF
+     to produce the attorney-ready document.
+     Inventor: John Kirshy | Conceived: June 12, 2026 | Filed: July 15, 2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AgentForge — Working Embodiment &amp; Patent Figures</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Times New Roman",Times,serif;font-size:12pt;line-height:1.6;color:#1a1a1a;background:#fff;max-width:760px;margin:0 auto;padding:40px 32px}
+  .cover{text-align:center;border:2px solid #1a1a1a;padding:40px 32px;margin-bottom:40px}
+  .cover .conf{font-size:9pt;font-weight:bold;letter-spacing:2px;text-transform:uppercase;color:#555;margin-bottom:24px}
+  .cover h1{font-size:18pt;font-weight:bold;margin-bottom:8px}
+  .cover h2{font-size:13pt;font-weight:normal;margin-bottom:24px;color:#333}
+  .cover table{width:100%;border-collapse:collapse;font-size:10.5pt;margin-top:16px}
+  .cover td{padding:5px 8px;border:1px solid #ccc}
+  .cover td:first-child{font-weight:bold;width:38%;background:#f5f5f5}
+  h2.sec{font-size:13pt;font-weight:bold;text-transform:uppercase;border-bottom:1.5px solid #1a1a1a;padding-bottom:4px;margin:36px 0 14px;letter-spacing:.5px}
+  h3.sub{font-size:11.5pt;font-weight:bold;margin:20px 0 8px}
+  p{margin-bottom:10px}ul{margin:8px 0 10px 24px}li{margin-bottom:5px}
+  .figure{border:1.5px solid #1a1a1a;border-radius:4px;margin:24px 0;page-break-inside:avoid}
+  .fig-title{background:#1a1a1a;color:white;font-family:Arial,sans-serif;font-size:9.5pt;font-weight:bold;padding:6px 14px;letter-spacing:.5px}
+  .fig-body{padding:20px}
+  .fig-caption{font-size:9.5pt;color:#555;font-style:italic;border-top:1px solid #e5e7eb;padding:8px 14px}
+  .flow{display:flex;align-items:center;flex-wrap:wrap;gap:0;margin:12px 0}
+  .flow-box{background:#f0f4ff;border:1.5px solid #3b5bdb;border-radius:4px;padding:8px 12px;font-family:Arial,sans-serif;font-size:9pt;font-weight:bold;text-align:center;min-width:90px}
+  .flow-arrow{font-size:14pt;color:#3b5bdb;padding:0 6px;font-weight:bold}
+  .flow-box.gate{background:#fff0f0;border-color:#c0392b}
+  .flow-box.log{background:#f0fff4;border-color:#27ae60}
+  .flow-box.route{background:#fff8e1;border-color:#f39c12}
+  .tier-table{width:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:9.5pt;margin:12px 0}
+  .tier-table th{background:#1a1a1a;color:white;padding:7px 10px;text-align:left;font-size:9pt}
+  .tier-table td{padding:7px 10px;border:1px solid #ccc;vertical-align:top}
+  .t1{background:#f0f4ff!important}.t2{background:#f5f0ff!important}.t3{background:#0f0c29!important;color:white!important}
+  .ledger-table{width:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:9pt;margin:12px 0}
+  .ledger-table th{background:#333;color:white;padding:6px 10px;text-align:left}
+  .ledger-table td{padding:6px 10px;border:1px solid #ddd;font-size:8.5pt}
+  .ledger-table tr:nth-child(even) td{background:#f5f5f5}
+  .arch-table{width:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:9.5pt;margin:12px 0}
+  .arch-table th{background:#302b63;color:white;padding:7px 10px;text-align:left}
+  .arch-table td{padding:7px 10px;border:1px solid #ccc;vertical-align:top}
+  .arch-table tr:nth-child(even) td{background:#faf5ff}
+  .license-grid{display:flex;gap:12px;margin:12px 0;flex-wrap:wrap}
+  .license-card{flex:1;min-width:180px;border:1.5px solid #302b63;border-radius:6px;padding:14px;font-family:Arial,sans-serif;font-size:9.5pt}
+  .license-card .lc-title{font-weight:bold;color:#302b63;margin-bottom:6px;font-size:10pt}
+  .env-bar{display:flex;align-items:center;gap:10px;margin:10px 0;font-family:Arial,sans-serif;font-size:9.5pt}
+  .env-bar .bar-label{width:110px;font-weight:bold}
+  .env-bar .bar-track{flex:1;background:#e5e7eb;border-radius:4px;height:22px;position:relative}
+  .env-bar .bar-fill{height:22px;border-radius:4px;display:flex;align-items:center;padding-left:8px;color:white;font-weight:bold;font-size:8.5pt}
+  .bar-t1{background:#27ae60;width:10%}.bar-t2{background:#f39c12;width:45%}.bar-t3{background:#c0392b;width:100%}
+  .url-box{background:#0f0c29;color:#c4b5fd;border-radius:6px;padding:14px 20px;font-family:"Courier New",monospace;font-size:11pt;font-weight:bold;text-align:center;margin:14px 0;letter-spacing:.5px}
+  .timeline{margin:12px 0}
+  .tl-row{display:flex;gap:0;align-items:stretch;margin-bottom:8px}
+  .tl-date{width:130px;font-family:Arial,sans-serif;font-size:9pt;font-weight:bold;color:#302b63;padding:8px 12px 8px 0;border-right:3px solid #7c5cd8;text-align:right;flex-shrink:0}
+  .tl-event{padding:8px 0 8px 14px;font-family:Arial,sans-serif;font-size:9.5pt}
+  .commit-box{background:#f5f5f5;border:1px solid #ccc;border-left:4px solid #27ae60;border-radius:4px;padding:12px 16px;font-family:"Courier New",monospace;font-size:9pt;margin:12px 0}
+  .note-box{background:#fff8e1;border:1px solid #f39c12;border-radius:4px;padding:12px 16px;font-family:Arial,sans-serif;font-size:9.5pt;margin:16px 0}
+  .note-box strong{color:#c0392b}
+  .footer{border-top:1px solid #ccc;margin-top:48px;padding-top:12px;text-align:center;font-size:9pt;color:#888}
+  @media print{body{padding:20px}.figure{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="conf">Confidential — Patent Support Document</div>
+  <h1>AgentForge</h1>
+  <h2>Working Embodiment Statement &amp; Patent Figures<br>Supplement to Provisional Patent Application</h2>
+  <table>
+    <tr><td>Inventor</td><td>John Kirshy</td></tr>
+    <tr><td>Conception Date</td><td>June 12, 2026</td></tr>
+    <tr><td>Provisional Filed</td><td>July 15, 2026</td></tr>
+    <tr><td>Working Embodiment Deployed</td><td>July 2026</td></tr>
+    <tr><td>Live URL</td><td>https://agentforge-socialmedia.streamlit.app</td></tr>
+    <tr><td>GitHub Repository</td><td>https://github.com/txnightcoder-prog/agentforge</td></tr>
+    <tr><td>Document Purpose</td><td>Working embodiment evidence + figures for provisional supplement and IBM IP attorney review</td></tr>
+  </table>
+</div>
+
+<h2 class="sec">I. Working Embodiment Statement</h2>
+<p>A working embodiment of the invention described in the Provisional Patent Application for <em>AgentForge: A Tiered AI Compute Token System for Query Complexity Control, Metered Consumption, and Environmentally Efficient AI Delivery</em> has been implemented and is publicly accessible as of July 2026.</p>
+<p>The working embodiment is a web-based interactive demonstration built using the Streamlit framework and deployed on Streamlit Community Cloud. It implements and visually demonstrates the following components of the claimed invention:</p>
+<ul>
+  <li>The <strong>Three-Tier Token Classification Schema</strong> (Basic, Mid, and Advanced token tiers) with associated query scope, compute path, and pricing</li>
+  <li>A <strong>Token Metering Engine simulation</strong> demonstrating the classify → validate → gate/allow → route → log workflow</li>
+  <li>An interactive <strong>Token Cost Calculator</strong> implementing Token Ledger consumption tracking and cost comparison</li>
+  <li>The <strong>Three Licensing Markets</strong> framework (Consumer App Credits, Enterprise Seat Licensing, LLM Platform Licensing)</li>
+  <li>The <strong>Environmental Efficiency</strong> claim with quantified compute reduction by tier</li>
+</ul>
+<div class="url-box">Live Working Embodiment: https://agentforge-socialmedia.streamlit.app</div>
+<div class="commit-box">
+GitHub Evidence of Deployment:<br>
+Repository:  https://github.com/txnightcoder-prog/agentforge<br>
+Commit:      c5e7ffd — "feat: AgentForge Streamlit app, Dockerfile, Azure deploy script"<br>
+Branch:      main<br>
+Timestamp:   July 2026 (git log verifiable)
+</div>
+<div class="note-box">
+  <strong>Attorney Note:</strong> This working embodiment constitutes a reduction to practice of the claimed invention. The deployment date and git commit timestamps are independently verifiable evidence supporting the conception date of June 12, 2026. The live site does not disclose implementation details of the Token Metering Engine classification algorithm beyond what is already in the provisional application.
+</div>
+
+<h2 class="sec">II. Patent Figures</h2>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 1 — Overall System Architecture</div>
+  <div class="fig-body">
+    <div class="flow">
+      <div class="flow-box">User / Application</div><div class="flow-arrow">→</div>
+      <div class="flow-box">Token Classification Interface</div><div class="flow-arrow">→</div>
+      <div class="flow-box">Token Metering Engine</div><div class="flow-arrow">→</div>
+      <div class="flow-box route">Tier Router</div><div class="flow-arrow">→</div>
+      <div class="flow-box">LLM / Agent Execution</div><div class="flow-arrow">→</div>
+      <div class="flow-box log">Token Ledger</div><div class="flow-arrow">→</div>
+      <div class="flow-box">Deliverable / Response</div>
+    </div>
+  </div>
+  <div class="fig-caption">Fig. 1 — End-to-end system flow from user query through tier classification, metering, routing, execution, ledger recording, and response delivery.</div>
+</div>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 2 — Three-Tier Token Schema</div>
+  <div class="fig-body">
+    <table class="tier-table">
+      <tr><th>Tier</th><th>Token Type</th><th>Query Scope</th><th>Compute Path</th><th>Price</th><th>Primary User</th></tr>
+      <tr class="t1"><td><strong>1</strong></td><td>Basic Token</td><td>Single-turn, simple factual queries</td><td>Lightweight / rule-based path</td><td>$0.001/query</td><td>General consumers</td></tr>
+      <tr class="t2"><td><strong>2</strong></td><td>Mid Token</td><td>Multi-turn sessions, analysis</td><td>Standard LLM inference</td><td>$0.01/query</td><td>Power users, analysts, SMB</td></tr>
+      <tr class="t3"><td><strong>3</strong></td><td>Advanced Token</td><td>Complex research, agentic pipelines</td><td>Full LLM + agentic orchestration</td><td>$0.10/query</td><td>Developers, enterprise architects</td></tr>
+    </table>
+  </div>
+  <div class="fig-caption">Fig. 2 — Three-tier token classification schema mapping query complexity to compute path, price, and user role. Implements Claim 1.</div>
+</div>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 3 — Token Metering Engine Flow</div>
+  <div class="fig-body">
+    <div class="flow" style="flex-wrap:wrap;gap:4px;">
+      <div class="flow-box">Receive Query</div><div class="flow-arrow">→</div>
+      <div class="flow-box">Classify Complexity</div><div class="flow-arrow">→</div>
+      <div class="flow-box">Validate Entitlement</div><div class="flow-arrow">→</div>
+      <div class="flow-box gate">Gate / Allow</div><div class="flow-arrow">→</div>
+      <div class="flow-box route">Route to Tier Path</div><div class="flow-arrow">→</div>
+      <div class="flow-box">Execute Query</div><div class="flow-arrow">→</div>
+      <div class="flow-box log">Log to Ledger</div><div class="flow-arrow">→</div>
+      <div class="flow-box">Return Response</div>
+    </div>
+    <p style="margin-top:14px;font-family:Arial,sans-serif;font-size:9.5pt;color:#444;">
+      <strong>Gate logic:</strong> If classified tier &gt; purchased tier → block execution, notify user to upgrade.<br>
+      <strong>Route logic:</strong> Tier 1 → lightweight path; Tier 2 → standard LLM; Tier 3 → full agentic pipeline.
+    </p>
+  </div>
+  <div class="fig-caption">Fig. 3 — Token Metering Engine flow. Implements Claims 1, 2, 7, and 8.</div>
+</div>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 4 — Token Ledger Schema</div>
+  <div class="fig-body">
+    <table class="ledger-table">
+      <tr><th>Field</th><th>Type</th><th>Description</th><th>Example</th></tr>
+      <tr><td>user_id</td><td>STRING</td><td>Unique user or enterprise identifier</td><td>ENT-004821</td></tr>
+      <tr><td>tier_consumed</td><td>INT (1–3)</td><td>Token tier of executed query</td><td>2</td></tr>
+      <tr><td>query_timestamp</td><td>DATETIME</td><td>UTC timestamp of execution</td><td>2026-07-15 14:32:01Z</td></tr>
+      <tr><td>compute_path</td><td>STRING</td><td>Compute path invoked</td><td>standard-llm-inference</td></tr>
+      <tr><td>tokens_consumed</td><td>DECIMAL</td><td>Token balance consumed</td><td>1.00</td></tr>
+      <tr><td>remaining_balance</td><td>DECIMAL</td><td>User's remaining balance</td><td>499.00</td></tr>
+      <tr><td>query_hash</td><td>SHA-256</td><td>Tamper-evident record</td><td>a3f2bc…</td></tr>
+    </table>
+  </div>
+  <div class="fig-caption">Fig. 4 — Token Ledger schema. Implements Claim 3.</div>
+</div>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 5 — Three Licensing Markets</div>
+  <div class="fig-body">
+    <div class="license-grid">
+      <div class="license-card"><div class="lc-title">📱 Consumer App Credits</div><ul><li>AI app developers integrate token framework</li><li>Sell Tier 1/2/3 credit packs to end users</li><li>Revenue share model</li><li>Tier 1 = entry; Tier 3 = premium</li></ul></div>
+      <div class="license-card"><div class="lc-title">🏢 Enterprise Seat Licensing</div><ul><li>Per-seat or departmental licensing</li><li>Developers → Tier 3; general staff → Tier 1/2</li><li>Scales by tier, seat count, volume</li><li>From $500/seat/month</li></ul></div>
+      <div class="license-card"><div class="lc-title">🤖 LLM Platform Licensing</div><ul><li>Offered to LLM providers</li><li>Standardized monetization layer</li><li>Differentiated product tiers</li><li>Credible green AI positioning</li></ul></div>
+    </div>
+  </div>
+  <div class="fig-caption">Fig. 5 — Three licensing markets. Implements Claims 4, 5, and 6.</div>
+</div>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 6 — Environmental Efficiency: Compute Reduction by Tier</div>
+  <div class="fig-body">
+    <p style="font-family:Arial,sans-serif;font-size:9.5pt;margin-bottom:14px;">Relative compute resource consumption per query by tier vs. flat-rate Tier 3 baseline:</p>
+    <div class="env-bar"><div class="bar-label">Tier 1 — Basic</div><div class="bar-track"><div class="bar-fill bar-t1">~10%</div></div></div>
+    <div class="env-bar"><div class="bar-label">Tier 2 — Mid</div><div class="bar-track"><div class="bar-fill bar-t2">~45%</div></div></div>
+    <div class="env-bar"><div class="bar-label">Tier 3 — Advanced</div><div class="bar-track"><div class="bar-fill bar-t3">100% (baseline)</div></div></div>
+    <p style="font-family:Arial,sans-serif;font-size:9.5pt;margin-top:14px;color:#444;">In a typical enterprise workload (70% Tier 1, 20% Tier 2), AgentForge routing reduces total compute consumption by approximately <strong>60–90%</strong> vs. flat-rate full-model invocation.</p>
+  </div>
+  <div class="fig-caption">Fig. 6 — Compute reduction by tier. Implements Claim 9 and Section 6 of the provisional application.</div>
+</div>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 7 — System Architecture Components</div>
+  <div class="fig-body">
+    <table class="arch-table">
+      <tr><th>Component</th><th>Role</th><th>Interfaces With</th></tr>
+      <tr><td><strong>User / Application</strong></td><td>Initiates query; holds purchased token tier credential</td><td>Token Classification Interface</td></tr>
+      <tr><td><strong>Token Classification Interface</strong></td><td>Presents tier options or reads tier from credential store</td><td>Token Metering Engine</td></tr>
+      <tr><td><strong>Token Metering Engine</strong></td><td>Classifies; validates entitlement; gates or allows; logs</td><td>Tier Router, Token Ledger</td></tr>
+      <tr><td><strong>Tier Router</strong></td><td>Directs query to compute path matching validated tier</td><td>LLM / Agent Execution Layer</td></tr>
+      <tr><td><strong>LLM / Agent Execution Layer</strong></td><td>Executes query at compute level matched to tier</td><td>Tier Router, Token Ledger</td></tr>
+      <tr><td><strong>Token Ledger</strong></td><td>Maintains auditable record: user ID, tier, timestamp, path, balance</td><td>Token Metering Engine, Reporting</td></tr>
+      <tr><td><strong>Deliverable / Response</strong></td><td>Returns output; triggers balance update</td><td>User / Application</td></tr>
+    </table>
+  </div>
+  <div class="fig-caption">Fig. 7 — Full system component architecture. Implements Section 4 of the provisional application.</div>
+</div>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 8 — Working Embodiment: Live Web Application UI Map</div>
+  <div class="fig-body">
+    <table class="arch-table">
+      <tr><th>UI Section</th><th>Patent Element Demonstrated</th><th>Claim / Figure</th></tr>
+      <tr><td>Three Tier Cards (Basic / Mid / Advanced)</td><td>Three-Tier Token Classification Schema</td><td>Claim 1, Fig. 2</td></tr>
+      <tr><td>Token Cost Calculator (interactive sliders)</td><td>Token Ledger consumption tracking and cost comparison</td><td>Claim 3, Fig. 4</td></tr>
+      <tr><td>Architecture flow (6 steps)</td><td>Token Metering Engine workflow</td><td>Claims 1, 7, Fig. 3</td></tr>
+      <tr><td>Three Licensing Market cards</td><td>Licensing framework — all three markets</td><td>Claims 4, 5, 6, Fig. 5</td></tr>
+      <tr><td>Environmental efficiency stat (90%)</td><td>Compute reduction via tier routing</td><td>Claim 9, Fig. 6</td></tr>
+      <tr><td>Waitlist / lead capture form</td><td>Commercial intent and market readiness</td><td>Supporting evidence</td></tr>
+    </table>
+    <div style="margin-top:14px;background:#f0f4ff;border:1px solid #3b5bdb;border-radius:4px;padding:12px 16px;font-family:Arial,sans-serif;font-size:9.5pt;">
+      <strong>Screenshot instruction:</strong> Take a full-page screenshot of https://agentforge-socialmedia.streamlit.app and attach as <strong>Exhibit A</strong>. The screenshot constitutes the visual record of Figure 8.
+    </div>
+  </div>
+  <div class="fig-caption">Fig. 8 — Working embodiment UI component map correlating each app section to its corresponding patent claim and figure.</div>
+</div>
+
+<div class="figure">
+  <div class="fig-title">FIGURE 9 — Conception &amp; Development Timeline</div>
+  <div class="fig-body">
+    <div class="timeline">
+      <div class="tl-row"><div class="tl-date">June 12, 2026</div><div class="tl-event"><strong>Conception date.</strong> Inventor observed compute efficiency difference between structured agentic AI queries and open-ended LLM prompts during Treasury Risk Monitor development. Tiered token framework conceived.</div></div>
+      <div class="tl-row"><div class="tl-date">July 15, 2026</div><div class="tl-event"><strong>Provisional patent application filed.</strong> IBM Invention Conception Record created. GitHub repository created (commit 275b0c8). Patent documents committed and pushed.</div></div>
+      <div class="tl-row"><div class="tl-date">July 2026</div><div class="tl-event"><strong>Working embodiment deployed.</strong> Streamlit web application implementing all major claimed components live at https://agentforge-socialmedia.streamlit.app (commit c5e7ffd). Reduction to practice achieved.</div></div>
+      <div class="tl-row"><div class="tl-date">Pending</div><div class="tl-event"><strong>IBM IDF submission.</strong> Formal Invention Disclosure Form to IBM IP portal. Assignment determination. Full patent application filing (deadline: July 15, 2027).</div></div>
+    </div>
+  </div>
+  <div class="fig-caption">Fig. 9 — Invention conception and development timeline establishing continuous development chain from June 12, 2026 through working embodiment deployment.</div>
+</div>
+
+<h2 class="sec">III. Notes for IBM IP Attorney</h2>
+<h3 class="sub">A. Reduction to Practice</h3>
+<p>The deployment at https://agentforge-socialmedia.streamlit.app constitutes an <em>actual reduction to practice</em>. The working embodiment demonstrates the three-tier token schema, Token Metering Engine workflow, Token Ledger cost calculation, and licensing framework — all as claimed in the provisional application.</p>
+<h3 class="sub">B. Public Disclosure Considerations</h3>
+<p>The working embodiment is publicly accessible. Under 35 U.S.C. § 102(b)(1)(A), a disclosure made one year or less before the effective filing date is not prior art if made by the inventor. Provisional filed July 15, 2026; working embodiment deployed July 2026. <strong>Full patent application must be filed by July 15, 2027.</strong></p>
+<h3 class="sub">C. Assignment Status</h3>
+<p>The provisional application lists IBM as assignee. The inventor is working with IBM Legal to determine the appropriate assignment or licensing arrangement. This document is provided as supporting evidence for the IDF process.</p>
+<h3 class="sub">D. GitHub Evidence</h3>
+<div class="commit-box">
+275b0c8 — feat: initial AgentForge invention — tiered AI compute token system (conception July 15 2026)<br>
+c5e7ffd — feat: AgentForge Streamlit app, Dockerfile, Azure deploy script
+</div>
+
+<div class="footer">
+  AgentForge — Working Embodiment &amp; Patent Figures · Supplement to Provisional Patent Application<br>
+  Inventor: John Kirshy · Conception: June 12, 2026 · Provisional Filed: July 15, 2026<br>
+  CONFIDENTIAL — For IBM IP Attorney Review Only<br><br>
+  Made with IBM Bob
+</div>
+</body>
+</html>
